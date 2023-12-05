@@ -23,14 +23,14 @@ function calcularTotal (precio, cuotas){
             break;
     
         default:{
-            console.log ("Las cuotas no estan disponibles")
+            alert ("Las cuotas no estan disponibles")
             break;
         }
             
     }
 }
 do {
-    precio = parseFloat (prompt("Ingrese precio del producto"));
+    precio = parseFloat(prompt("Ingrese precio del producto"));
     cuotas = parseInt(prompt("Ingrese numero cuotas (3,6,9,12)"));
     calcularTotal (precio,cuotas);
     continuar = prompt("Desea continuar? (si/no)").toLowerCase();
